@@ -2,7 +2,6 @@ package vr.miniautorizador.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.yaml.snakeyaml.emitter.ScalarAnalysis;
 import vr.miniautorizador.domain.Card;
 import vr.miniautorizador.domain.Transaction;
 import vr.miniautorizador.repository.CardRepository;

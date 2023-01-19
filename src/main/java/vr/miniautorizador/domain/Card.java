@@ -18,9 +18,9 @@ public class Card {
     @JsonProperty("senha")
     private String password;
 
-    public Card(String cardNumber, double balance, String password) {
+    public Card(String cardNumber, String password) {
         this.cardNumber = cardNumber;
-        this.balance = balance;
+        this.balance = 500;
         this.password = password;
     }
 

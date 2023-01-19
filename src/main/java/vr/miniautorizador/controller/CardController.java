@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.*;
 import vr.miniautorizador.domain.Card;
 import vr.miniautorizador.service.CardService;
 
-import java.util.NoSuchElementException;
-
 @RestController
 @RequestMapping("/cartoes")
 public class CardController {
@@ -28,7 +26,7 @@ public class CardController {
     public ResponseEntity<Double> getCard(@PathVariable String cardNumber) {
         try {
             return ResponseEntity.ok().body(cardService.getCardByNumber(cardNumber).getBalance());
-        } catch (NoSuchElementException e) {
+        } catch (RuntimeException e) {
             return ResponseEntity.status(404).body(null);
         }
     }
