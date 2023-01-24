@@ -10,6 +10,9 @@ public class Transaction {
     @JsonProperty("valor")
     private double value;
 
+    public Transaction() {
+    }
+
     public Transaction(String cardNumber, String password, double value) {
         this.cardNumber = cardNumber;
         this.password = password;
