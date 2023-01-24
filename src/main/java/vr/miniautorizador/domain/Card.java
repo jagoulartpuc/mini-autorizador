@@ -19,6 +19,7 @@ public class Card {
     private String password;
 
     public Card() {
+        this.balance = 500;
     }
 
     public Card(String cardNumber, String password) {
